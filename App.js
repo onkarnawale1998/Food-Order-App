@@ -1733,13 +1733,12 @@ const RestaurantCard = ( {cloudinaryImageId, name , locality ,areaName,avgRating
     </div>
   )
 }
-  
-console.log(RestaurantList)
+ 
 const Body = () => {
   return(
   <div className="restaurant-list">
     {RestaurantList.map((restaurant) => {
-      return <RestaurantCard {...restaurant.info} />
+      return <RestaurantCard {...restaurant.info} key= {restaurant.info.id} />
     })}
     </div>
   )
