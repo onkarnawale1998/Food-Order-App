@@ -1765,21 +1765,9 @@ console.log(RestaurantList)
 const Body = () => {
   return(
   <div className="restaurant-list">
-    <RestaurantCard {...RestaurantList[0].info} />
-    {/* <RestaurantCard restaurant = {RestaurantList[1]} />
-    <RestaurantCard restaurant = {RestaurantList[2]} />
-    <RestaurantCard restaurant = {RestaurantList[3]} />
-    <RestaurantCard restaurant = {RestaurantList[4]} />
-    <RestaurantCard restaurant = {RestaurantList[5]} />
-    <RestaurantCard restaurant = {RestaurantList[6]} />
-    <RestaurantCard restaurant = {RestaurantList[7]} />
-    <RestaurantCard restaurant = {RestaurantList[8]} />
-    <RestaurantCard restaurant = {RestaurantList[9]} />
-    <RestaurantCard restaurant = {RestaurantList[10]} />
-    <RestaurantCard restaurant = {RestaurantList[11]} /> 
-    <RestaurantCard restaurant = {RestaurantList[12]} />  
-    <RestaurantCard restaurant = {RestaurantList[13]} />   
-    <RestaurantCard restaurant = {RestaurantList[14]} />   */}
+    {RestaurantList.map((restaurant) => {
+      return <RestaurantCard {...restaurant.info} />
+    })}
     </div>
   )
 }
