@@ -38,11 +38,6 @@ a:hover {
     padding: 10px;
     margin: 10px;
     line-height: 14px;
-    /* word-wrap: break-word; */
-    /* overflow-wrap: break-word; */
-    /* word-break: break-word;  */
-    /* white-space: normal; */
-    /* white-space: pre-wrap */
 } 
 
 .card >img {
