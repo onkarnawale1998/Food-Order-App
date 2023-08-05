@@ -1747,8 +1747,8 @@ const RestaurantList = [
   }
 ]
 
-const RestaurantCard = ({restaurant}) => {
-  const {cloudinaryImageId, name , locality ,areaName,avgRating,cuisines,totalRatingsString,costForTwo, sla:{lastMileTravelString , slaString} } = restaurant.info;
+const RestaurantCard = ( {cloudinaryImageId, name , locality ,areaName,avgRating,cuisines,totalRatingsString,costForTwo, sla:{lastMileTravelString , slaString} }) => {
+  
   return(
     <div className="card"> 
       <img src= {"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ cloudinaryImageId }  alt="Restaurant image"  />
@@ -1765,8 +1765,8 @@ console.log(RestaurantList)
 const Body = () => {
   return(
   <div className="restaurant-list">
-    <RestaurantCard restaurant = {RestaurantList[0]} />
-    <RestaurantCard restaurant = {RestaurantList[1]} />
+    <RestaurantCard {...RestaurantList[0].info} />
+    {/* <RestaurantCard restaurant = {RestaurantList[1]} />
     <RestaurantCard restaurant = {RestaurantList[2]} />
     <RestaurantCard restaurant = {RestaurantList[3]} />
     <RestaurantCard restaurant = {RestaurantList[4]} />
@@ -1779,7 +1779,7 @@ const Body = () => {
     <RestaurantCard restaurant = {RestaurantList[11]} /> 
     <RestaurantCard restaurant = {RestaurantList[12]} />  
     <RestaurantCard restaurant = {RestaurantList[13]} />   
-    <RestaurantCard restaurant = {RestaurantList[14]} />  
+    <RestaurantCard restaurant = {RestaurantList[14]} />   */}
     </div>
   )
 }
