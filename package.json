@@ -1,7 +1,7 @@
 {
-  "name": "Food-Order-App",
+  "name": "foodorderapp",
   "version": "1.0.0",
-  "description": "Food App",
+  "description": "food order app",
   "source": "index.html",
   "scripts": {
     "test": "npm run test",
