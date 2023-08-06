@@ -1,4 +1,4 @@
-import {IMG_CDN_URL} from "../../config"
+import {IMG_CDN_URL} from "../config"
 const RestaurantCard = ( {cloudinaryImageId, name , locality ,areaName,avgRating,cuisines,totalRatingsString,costForTwo, sla:{lastMileTravelString , slaString} }) => {
   
     return(
