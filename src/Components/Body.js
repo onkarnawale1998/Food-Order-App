@@ -1,5 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
-import {restaurantList} from "../../config"
+import {restaurantList} from "../../src/config"
 
 const Body = () => {
     return(
