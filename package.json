@@ -1,7 +1,7 @@
 {
-  "name": "namaste-javascript",
+  "name": "Food-Order-App",
   "version": "1.0.0",
-  "description": "React code form namaste react",
+  "description": "Food App",
   "source": "index.html",
   "scripts": {
     "test": "npm run test",
