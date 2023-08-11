@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import Search from "./Search";
+
 const Logo = () => (
   <a href="/">
     <img
@@ -8,12 +11,16 @@ const Logo = () => (
   </a>
 );
 
-const Header = () => {
+const Header = ({ restaurants, setRestaurants }) => {
+  
   return (
     <div className="header">
       <Logo />
       <div className="nav-items">
         <ul>
+          <li>
+          <Search  restaurants={restaurants} setRestaurants={setRestaurants} />
+          </li>
           <a href="/">
             <li>Home</li>
           </a>
